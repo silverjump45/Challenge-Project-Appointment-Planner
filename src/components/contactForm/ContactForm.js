@@ -7,6 +7,7 @@ export const ContactForm = ({
   phone,
   setPhone,
   email,
+  isDuplicate,
   setEmail,
   handleSubmit
 }) => {
@@ -31,6 +32,7 @@ export const ContactForm = ({
           onChange={({ target }) => setEmail(target.value)}
           type="email"
         />
+      </label>
       <label>
         Phone Number {""}
         <input
