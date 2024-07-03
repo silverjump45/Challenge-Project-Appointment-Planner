@@ -1,14 +1,17 @@
+import PropTypes from "prop-types"
 import React from "react";
 import { Tile } from "../tile/Tile"
 
-export const TileList = (props) => {
+export const TileList = ({ appointmentsOrContacts }) => {
   return (
     <div>
-      {
-      props.list.map((object,index) =>
-        <Tile object = {object} key = {index} />
-        )
-      }
+      {appointmentsOrContacts.map(({ name, ...rest }, index) => (
+        <Tile key={name + index} name={name} description={rest} />
+      ))}
     </div>
   );
+};
+
+TileList.propTypes = {
+  appointmentsOrContacts: PropTypes.array.isRequired
 };
