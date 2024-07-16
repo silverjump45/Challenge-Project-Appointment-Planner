@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { AppointmentForm } from "../../components/appointmentForm/AppointmentForm";
-import { TileList } from "../../components/tileList/TileList";
+import { TileList } from "../../components/tileList/TileList.js";
 
 export const AppointmentsPage = ({ appointsments, contacts, addAppointment }) => {
   /*

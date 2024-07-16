@@ -1,6 +1,6 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 import React from "react";
-import { Tile } from "../tile/Tile"
+import { Tile } from "../tile/Tile";
 
 export const TileList = ({ appointmentsOrContacts }) => {
   return (
@@ -13,5 +13,5 @@ export const TileList = ({ appointmentsOrContacts }) => {
 };
 
 TileList.propTypes = {
-  appointmentsOrContacts: PropTypes.array.isRequired
+  appointmentsOrContacts: PropTypes.array.isRequired,
 };
